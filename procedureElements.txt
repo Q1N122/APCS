@@ -16,3 +16,13 @@ A B  variable names
 )    meaning of right-parenthesis to the language processor, marking the end of variable names
 :    separator marking the start of the content of the function
 return returns the value that follows when the function is invoked
+
+sum(2,3)
+sum call the function
+() marking its a invocation instead of finding the location of the function
+2 3 parameters passed to the function
+, separator
+
+when the function is invoked, the python interpreter finds the function and passes the copy of the parameters.
+Then the procedure in the function is followed to return a result based on the input parameters.
+The result returned is then passed to the locations of the invocation of the function and replaces the invocation. 
