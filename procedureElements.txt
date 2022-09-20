@@ -10,10 +10,10 @@ def sum(A, B):
 
 def  the keyword for defining a function
 sum  function name
-(    meaning of left-parenthesis to the language processor, separator marking the start of variable names
+(    meaning of left-parenthesis to the language processor, separator marking the start of the list of parameters
 A B  parameters
 ,    separator separating the parameters
-)    meaning of right-parenthesis to the language processor, marking the end of variable names
+)    meaning of right-parenthesis to the language processor, marking the end of of the list of parameters
 :    separator marking the start of the content of the function
 return returns the value that follows when the function is invoked
 
