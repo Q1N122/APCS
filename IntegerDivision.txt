@@ -1,0 +1,10 @@
+pd2  hw013  2022-10-05                           Tianlang Qin
+worked with no one;     advised by no one
+
+John wants to share six apples with 2 of his friends(including himself), how many does each person get?
+
+Jessica has 12 carrots, and she has to feed her three rabbits, how many carrots does each rabbit get?
+
+Lora has 15 pounds of beef, knowing that one needs 2 pounds of beef to feed a dog, how many dogs can Lora feed?
+
+Claire has a pizza with 12 slices, and each person needs to eat 4 slices to be full, how many people can Claire share the pizza with?
