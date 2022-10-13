@@ -89,4 +89,8 @@ public class RectangularRoom {
                           );
     }
 
-    private static int person( int file, int rank
+    private static int person( int file, int rank) {
+        return 6 * file  + rank;
+    }
+}
+
