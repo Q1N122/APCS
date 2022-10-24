@@ -1,6 +1,6 @@
 /**
  * Tianlang Qin
- * hw017
+ * hw018
  * worked with no one
  * helped by no one
   Represent a date
@@ -14,11 +14,11 @@ on the datatypes and names we aim to use.
     byte  day_1_31
 */
 public class DateForApcs {
-    static short year;
-    static byte month_0_11;
-    static byte day_1_31;
+    short year;
+    byte month_0_11;
+    byte day_1_31;
 
-    public static String iso8601(short year, byte month_0_11, byte day_1_31) {
+    public String iso8601(short year, byte month_0_11, byte day_1_31) {
       String result = "";
       result += String.valueOf(year);
       if (month_0_11 < 9) {
@@ -36,7 +36,17 @@ public class DateForApcs {
       return result;
     }
 
-    public static boolean isLeapYear(short year) {
-        return year % 400 == 0 || (year % 4 ==0 && year % 100 != 0);
+    public boolean isLeapYear(short year) {
+        if (year % 4 != 0) 
+            return false;
+        if (year % 100 != 0) 
+            return true;
+        return year % 400 == 0;
+    }
+
+    public boolean isEarlyJuly () {
+        if (month_0_11 < 6) return true;
+        else if (month_0_11 > 6) return false;
+        return (day_1_31 < 16);
     }
 }
