@@ -1,0 +1,17 @@
+pd2  hw022  2022/10/27                                            Tianlang Qin
+worked with no one;     advised by contributors on Piazza
+
+Declaration semantics:
+The compiler recognizes the datatype and writes bytecode that causes the JVM to
+reserve certain of memory based on the datatype. If the variable is a field, it
+is initialized  with a zero-like value. The name becomes associated with a
+chunk of memory.
+
+Assignment semantics:
+The JVM copies the value of the expression on the RHS and stores that value
+into the chunk of memory associated with the variable on the LHS
+
+Retrieval semantics:
+When Java retrieves the value of a variable in an expression, Java finds the
+chunk of memory allocated to that variable and replaces the variable with the
+value stored in the reference.
