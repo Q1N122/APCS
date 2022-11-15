@@ -48,13 +48,11 @@ public class DateForApcs {
       Processing courtesy of Intia
      */
     public String toString(){
-        String afterYear = "-";
-        String afterMonth = "-";
-        if( month_0_11 <= 8) afterYear =  "-0";
-        if( day_1_31 <= 9)   afterMonth = "-0";
+        String afterYear = month_0_11 <= 8 ? "-0" : "-"; // ternary if
+        String afterMonth = day_1_31 <= 9 ? "-0" : "-";
         return year + afterYear
-             + (month_0_11 + 1) + afterMonth
-             + day_1_31;
+           + (month_0_11 + 1) + afterMonth
+           + day_1_31;
     }
 
     /* 
