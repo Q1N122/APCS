@@ -23,16 +23,30 @@ public class FibonacciSeq {
         fibNums[1] = 1;
         int index = 2;
 
-        while (index < fibNums.length) {
-            fibNums[index] = fibNums[index - 1] + fibNums[index -2];  
-            index++;
-        }
+        fibNums[2] = fibNums[1] + fibNums[0];
+        fibNums[3] = fibNums[2] + fibNums[1];
+        fibNums[4] = fibNums[3] + fibNums[2];
+        fibNums[5] = fibNums[4] + fibNums[3];
+        fibNums[6] = fibNums[5] + fibNums[4];
+        fibNums[7] = fibNums[6] + fibNums[5];
 
         // // push one too many
-        // while (index <= fibNums.length) {
-        //   fibNums[index] = fibNums[index - 1] + fibNums[index -2];  
-        //   index++;
+        // fibNums[2] = fibNums[1] + fibNums[0];
+        // fibNums[3] = fibNums[2] + fibNums[1];
+        // fibNums[4] = fibNums[3] + fibNums[2];
+        // fibNums[5] = fibNums[4] + fibNums[3];
+        // fibNums[6] = fibNums[5] + fibNums[4];
+        // fibNums[7] = fibNums[6] + fibNums[5];
+        // fibNums[8] = fibNums[7] + fibNums[6];
+
+        // //nttstt
+        // while (index < fibNums.length) {
+        //     fibNums[index] = fibNums[index - 1] + fibNums[index -2];  
+        //     index++;
         // }
+
+        
+        
     }
 
 
