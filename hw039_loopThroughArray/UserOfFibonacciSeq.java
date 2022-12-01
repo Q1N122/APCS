@@ -52,6 +52,15 @@ public class UserOfFibonacciSeq {
                   + thruF2
                   );
 
+        FibonacciSeq thruF0 = new FibonacciSeq(0);
+        thruF0.gimme8();
+        System.out.println(
+                    System.lineSeparator()
+                  + "----- first 2 Fibonacci numbers -----"
+                  + System.lineSeparator()
+                  + thruF0
+                  );
+
         
     }
 }

@@ -45,7 +45,7 @@ public class FibonacciSeq {
           result += seq[index] + " ";
           index++;
       }
-      result += "\nNumber of array entries available: " + seq.length;
+      result += "\nNumber of array entries available: " + size;
       return result;
   }
 
