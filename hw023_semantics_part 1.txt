@@ -1,0 +1,19 @@
+pd2  hw023  2022/10/30                                             Tianlang Qin
+worked with no one;     advised by contributors on Piazza
+
+New operator Semantics
+The JVM instantiates a class by dynamically allocating memory for a new object
+and returning a reference to that memory. (GeekForGeeks)
+
+Combo Semantics
+The compiler recognizes the datatype and writes bytecode that causes the JVM to
+reserve certain of memory based on the datatype. If the variable is a field, it
+is initialized  with a zero-like value. The name becomes associated with a
+chunk of memory.
+Then, the JVM  Copy the value of each argument from the invocation into the
+corresponding parameter of the method. Execute the statements in the method,
+using the copied values. When a return expression is executed, the value of
+expression replaces the invocation which gets stored into the chunk of memory
+associated with the variable on the LHS
+
+Access restrictions
