@@ -1,6 +1,6 @@
 /**
  * Tianlang Qin
- * hw041
+ * hw042
  * worked with no one 
  * helped by no one 
    Exercise the RaggedRoom class
