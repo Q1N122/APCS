@@ -8,8 +8,8 @@
    meanings of...
       persons: a reference to an array of references to
                an array of integers.
-      persons[3] : reference to the array 3
-      persons[3][2] : reference to the element 2 of array 3
+      persons[3] : reference to the array representing file 3 
+      persons[3][2] : person number of element 2 of the reference to the array representing file 3
  */
 public class RaggedRoom {
 
