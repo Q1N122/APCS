@@ -6,7 +6,8 @@
    Exercise the RaggedRoom class
  */
 public class UserOfRaggedRoom {
-    public static void main( String[] commandLine) {
+     public static void main( String[] commandLine) {
+
           int[] input = new int[commandLine.length];
           for (int i = 0; i < commandLine.length; i++) {
                input[i] = Integer.parseInt(commandLine[i]);
@@ -59,7 +60,5 @@ public class UserOfRaggedRoom {
                + System.lineSeparator()
                + room308
                );
-          }
-
-          
+     }          
 }
