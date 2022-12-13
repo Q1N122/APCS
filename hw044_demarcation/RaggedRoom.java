@@ -135,7 +135,7 @@ public class RaggedRoom {
      */
     public RaggedRoom() {
         this(new int[] {8,6,6,7,7});
-        populate();
+        
     }
 
 
