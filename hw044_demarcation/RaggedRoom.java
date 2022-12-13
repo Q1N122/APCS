@@ -16,7 +16,7 @@ public class RaggedRoom {
 
     // person number at a particular file and rank
     private int[][] persons;
-    public int roomID;
+    private int roomID;
 
     /**
        @return a string representation of this instance
