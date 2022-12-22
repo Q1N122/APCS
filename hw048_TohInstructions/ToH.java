@@ -81,20 +81,14 @@ private int nMoves;  // # of moves calculated so far.
                                              , String spare
                                             ) {
         if (nDisks == 1) {
-            int i = 0;
-            while (moves[i] != null) {
-                i++;
-            }
-            moves[i] = new Move(from, to);
+            moves[nMoves] = new Move(from, to);
+            nMoves++;
             return;
         }
         else {
             generateMoves(nDisks - 1, from, spare, to);
-            int i = 0;
-            while (moves[i] != null) {
-                i++;
-            }
-            moves[i] = new Move(from, to);
+            moves[nMoves] = new Move(from, to);
+            nMoves++;
             generateMoves(nDisks - 1, spare, to, from);
             return;
         }
