@@ -22,9 +22,37 @@ public class PhoneBook{
           };
     }
 
-    public int findPage(String name) {
-        return -1;//stub
+
+    /**
+       @return  the phone number for "name", or
+                return null if "name" is absent.
+       precondition: the phone book must be sorted by name
+     */
+    public/* instance */ String getPhone( String name) {
+        return getPhone(name, 0 ,  entries.length);
     }
+
+    public String getPhone (String name, int lower, int upper) {
+
+        int currOffset = (upper + lower) / 2;
+
+        if (lower == upper) {
+            return null;
+        }
+        
+        int compareResult = entries[currOffset].compareTo(name);
+        
+        if (compareResult == 0) {
+            return entries[currOffset].getPhone();
+        }
+        else if (compareResult < 0) {
+            return (getPhone(name, currOffset + 1, upper));
+        }
+        else {
+            return (getPhone(name, lower, currOffset));
+        }
+    }
+
 
     /**
        Test Entry.compareTo
@@ -33,7 +61,7 @@ public class PhoneBook{
         PhoneBook phoneBook = new PhoneBook();
 
         // compareTo test
-        System.out.println( 
+        System.out.println(
             System.lineSeparator()
           + "----- compareTo test -----"
           );
