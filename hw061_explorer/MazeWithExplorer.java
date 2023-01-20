@@ -65,7 +65,7 @@ public class MazeWithExplorer {
                the last-used offsetSouth.
              */
             String line = sc.nextLine();
-            System.out.println( "line, for debugging |" + line + "|");
+            //System.out.println( "line, for debugging |" + line + "|");
 
             maze[ offsetSouth] = new int[ line.length()];
 
@@ -144,6 +144,15 @@ public class MazeWithExplorer {
       @return the MazeElement that the explorer is on.
      */
     public int explorerIsOnA() {
-        return maze[explorerOffsetSouth][explorerOffsetEast];
+        if (explorerOffsetSouth > maze.length || explorerOffsetEast > maze[0].length) {
+            return -1;
+        }
+        else if (maze[explorerOffsetSouth] == null) {
+            return -1;
+        }
+        else {
+            return maze[explorerOffsetSouth][explorerOffsetEast];
+        }
+        
     }
 }
